@@ -12,12 +12,10 @@ from google.genai import types
 from elevenlabs.client import ElevenLabs
 
 # === ElevenLabs setup ===
-client_eve = ElevenLabs(api_key="sk_3d8c562ce3f03b1b046580b668d9a37740b2fa7bf6d76635")
-#sk_e2127574bf46e2f3703308784cf0b86ca4034fc6442b99d3
+client_eve = ElevenLabs(api_key=elevenlabsapikey)
 
-#sk_ce09c081a700b43dca9a7c950454ede7e5b1e89553616fd5
 # === Gemini setup ===
-client = genai.Client(api_key="AIzaSyD9RLIt9KrZ0WpNsruIHMyLljdZlZHPL8Y")
+client = genai.Client(api_key=geminiapikey)
 
 # === Load quotes ===
 with open("quotes.json", "r") as f:
